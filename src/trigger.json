@@ -1,0 +1,168 @@
+{
+    "name": "trigger-card",
+    "elements": [
+        {
+            "tag": "form",
+            "text": "",
+            "attributes": {
+                "id": "form_id"
+            },
+            "elements": [
+                {
+                    "tag": "h4",
+                    "text": "Personal Information",
+                    "attributes": {}
+                },
+                {
+                    "tag": "text-field",
+                    "text": "",
+                    "attributes": {
+                        "name": "name",
+                        "required": "true",
+                        "placeholder": "Name"
+                    }
+                },
+                {
+                    "tag": "text-field",
+                    "text": "",
+                    "attributes": {
+                        "name": "email",
+                        "required": "true",
+                        "placeholder": "email"
+                    }
+                },
+                {
+                    "tag": "h4",
+                    "text": "Select your country",
+                    "attributes": {}
+                },
+                {
+                    "tag": "select",
+                    "text": "",
+                    "attributes": {
+                        "name": "country"
+                    },
+                    "elements": [
+                        {
+                            "tag": "option",
+                            "text": "Australia",
+                            "attributes": {
+                                "value": "opt1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "tag": "h4",
+                    "text": "Choose your option",
+                    "attributes": {}
+                },
+                {
+                    "tag": "radio",
+                    "text": "Marked",
+                    "attributes": {
+                        "name": "example_radio",
+                        "value": "option_01",
+                        "checked": "true"
+                    }
+                },
+                {
+                    "tag": "radio",
+                    "text": "Unmarked",
+                    "attributes": {
+                        "name": "example_radio",
+                        "value": "option_02"
+                    }
+                },
+                {
+                    "tag": "h4",
+                    "text": "Choose your option",
+                    "attributes": {}
+                },
+                {
+                    "tag": "checkbox",
+                    "text": "Checked",
+                    "attributes": {
+                        "name": "checkbox_1",
+                        "value": "value01",
+                        "checked": "true"
+                    }
+                },
+                {
+                    "tag": "checkbox",
+                    "text": "Unchecked",
+                    "attributes": {
+                        "name": "checkbox_2",
+                        "value": "value02"
+                    }
+                },
+              {
+                "tag": "h4",
+                "text": "Send a comment",
+                "attributes": {}
+              },
+              {
+                "tag": "textarea",
+                "text": "",
+                "attributes": {
+                    "placeholder": "Add your comment here",
+                    "required": "true"
+                }
+              },
+              {
+                "tag": "button",
+                "text": "Reset",
+                "attributes": {
+                    "type": "reset"
+                }
+              },
+              {
+                "tag": "button",
+                "text": "Submit",
+                "attributes": {
+                    "name":"submit_button",
+                    "type": "action"
+                }
+              }
+          ]
+        }
+    ]
+}
+
+/*
+<messageML>
+    <form id="form_id">
+        <h4>Personal Information</h4>
+        <text-field name="name" required="true" placeholder="Name" />
+        <text-field name="email" required="true" placeholder="email" />
+
+        <h4>Select your country</h4>
+        <select name="country">
+            <option value="opt1">Australia</option>
+            <option value="opt2">Brazil</option>
+            <option value="opt3">China</option>
+            <option value="opt4">Denmark</option>
+            <option value="opt5">Ecuador</option>
+            <option value="opt6">France</option>
+            <option value="opt7">Germany</option>
+            <option value="opt8">Italy</option>
+            <option value="opt9">Japan</option>
+        </select>
+
+        <h4>Choose your option</h4>
+        <radio name="example_radio" value="option_01" checked="true">Marked</radio>
+        <radio name="example_radio" value="option_02">Unmarked</radio>
+
+        <h4>Choose your option</h4>
+        <checkbox name="checkbox_1" value="value01" checked="true">Checked</checkbox>
+        <checkbox name="checkbox_2" value="value02">Unchecked</checkbox>
+
+        <h4>Send a comment</h4>
+        <textarea name="comment" placeholder="Add your comment here" required="true" />
+
+        <button type="reset">Reset</button>
+        <button name="submit_button" type="action">Submit</button>
+
+    </form>
+</messageML>
+*/
