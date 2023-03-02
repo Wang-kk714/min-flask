@@ -1,5 +1,5 @@
 # min-flask
-Minimal Application of a Python Flask server
+Application of a Python FastAPI server
 
 ## Requirements
 - python 3.10
@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 Start the server:
 ```shell
-flask run
+python app.py
 ```
 
-View at [http://localhost:5000](http://localhost:5000)
+View at [http://localhost:8080](http://localhost:8080)

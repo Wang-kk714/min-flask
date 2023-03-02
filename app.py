@@ -1,6 +1,15 @@
-from flask_backend import get_app
+from fastapi import FastAPI
+import uvicorn
+from src.controller import message_adapter
 
-app = get_app()
+app = FastAPI()
+app.include_router(message_adapter.adapter)
+
+
+@app.get('/')
+async def root():
+    return "Hello world!"
+
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, threaded=True)
+    uvicorn.run(app, host="0.0.0.0", port=8080)

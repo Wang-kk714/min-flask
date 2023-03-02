@@ -1,4 +1,9 @@
-flask==2.1.0
+# pytest
 pylint==2.13.9
 pytest==7.1.2
 pytest-cov==3.0.0
+
+# FastAPI
+fastapi==0.90.0
+uvicorn==0.20.0
+httpx==0.23.3
